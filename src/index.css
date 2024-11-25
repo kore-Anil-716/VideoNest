@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+  padding:0px;
+  margin:0px;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: rgb(0, 0, 0);
+  color:#fff;
+  font-family: "Poppins",'Roboto', sans-serif;
+  font-style: 'Roboto';
+  font-weight:400;
+  width:100vw;
+
+}
+/* @layer utilities {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+} */
+
+/* .Dragger::-webkit-scrollbar{
+  height:15px;
+}
+.Dragger::-webkit-scrollbar-track{
+  background-color: transparent;
+}
+.Dragger::-webkit-scrollbar-thumb{
+  background:#fff;
+  height:15px;
+  border-radius: 10%;
+} */
+ /* .ContentBox::-webkit-scrollbar{
+  overflow-y: scroll;
+  width:50px;
+  display: none;
+} 
+
+.ContentBox::-webkit-scrollbar-track{
+  background-color: transparent;
+}
+.ContentBox::-webkit-scrollbar-thumb{
+  color:white;
+  background-color: rgb(183, 178, 178);
+  border:2px solid rgb(48, 48, 48);
+  border-radius:5px;
+} */
