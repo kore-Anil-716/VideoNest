@@ -14,7 +14,7 @@ const SearchResults = () => {
         const response = await fetch(
           `https://www.googleapis.com/youtube/v3/search?part=snippet&q=${encodeURIComponent(
             query
-          )}&type=video&maxResults=5&regionCode=IN&relevanceLanguage=te&key=${API_KEY}`
+          )}&type=video&maxResults=15&regionCode=IN&relevanceLanguage=te&key=${API_KEY}`
         );
         const data = await response.json();
         setApiData(data.items || []); // Handle case where items might be undefined
