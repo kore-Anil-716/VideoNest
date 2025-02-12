@@ -30,7 +30,7 @@ const Home = ({auth,setAuth}) => {
   }, [auth])
   useEffect(()=>{
     const fetchdata=async ()=>{
-     await fetch('https://www.googleapis.com/youtube/v3/search?key=AIzaSyBP2H0594H1JvnSNas0oD2N3oTnxSrWcgQ&relevanceLanguage=en&channelId=&part=snippet&order=date&maxResults=5')
+     await fetch('https://www.googleapis.com/youtube/v3/search?key=AIzaSyBP2H0594H1JvnSNas0oD2N3oTnxSrWcgQ&relevanceLanguage=en&channelId=&part=snippet&order=date&maxResults=15')
       .then(res=>res.json().then(data=>setapi_data(data.items)))
     
     }
