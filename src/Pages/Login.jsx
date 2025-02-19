@@ -12,7 +12,7 @@ const Login = () => {
   // console.log(params)
    const loginsuccess=async (e)=>{
     e.preventDefault();
-    axios.post('http://localhost:3000/login',{email,password})
+    axios.post('https://video-nest-backend.vercel.app/login',{email,password})
     .then(resp=>{
       if(resp.status===200){
         navigate('/home')
